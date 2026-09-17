@@ -94,3 +94,11 @@
   --screen-margin: 16px;
   --topbar-height: 44px;
 }
+
+/* v0.1.2a — gallery plumbing fix: provisional + redeclared tokens */
+:root {
+  --accent-tinted: rgba(11, 132, 254, 0.15);  /* VAL-0001, single sighting, provisional */
+  --hairline: 1px;                            /* platform structural constant */
+  --sys-red: #FF453A;
+  --sys-green: #32D74B;
+}
