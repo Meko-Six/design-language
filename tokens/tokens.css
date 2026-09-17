@@ -110,3 +110,14 @@
   --topbar-h: 52px;
 }
 [data-density="compact"] { --topbar-h: 44px; }
+
+/* v0.1.3c — VAL-0007b: sizing with px units in BOTH density scopes.
+   Custom properties inherit from <body>, so a [data-density] block
+   overrides :root for all page content — compact pages were receiving
+   unitless values, making height/width declarations invalid. */
+:root, [data-density="compact"], [data-density="regular"] {
+  --touch-target: 44px;
+  --row-height: 44px;
+}
+[data-density="compact"] { --topbar-h: 44px; }
+[data-density="regular"] { --topbar-h: 52px; }

@@ -34,3 +34,8 @@ Seeded: tokens, contract, decision records DR-0001..0003.
   to content height (invalid/missing --touch-target). If tokens.yaml→css
   codegen skipped sizing before, this class can recur — codegen gets a
   checklist when it's built.
+
+## v0.1.3c — VAL-0007b (user-reported, still broken after v0.1.3b)
+- Root cause hypothesis: unitless sizing tokens in density-scoped blocks
+  override :root via inheritance (compact pages only).
+- Fix: px values asserted across :root AND both density scopes.
