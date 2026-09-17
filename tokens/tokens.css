@@ -121,3 +121,23 @@
 }
 [data-density="compact"] { --topbar-h: 44px; }
 [data-density="regular"] { --topbar-h: 52px; }
+
+/* v0.1.3d — type tokens reasserted as complete font shorthands
+   (weight size/line-height family — a shorthand without a family is
+   invalid and gets dropped, which collapsed button typography) */
+:root {
+  --t-title: 700 22px/28px var(--font);
+  --t-headline: 600 13px/16px var(--font);
+  --t-body: 400 13px/18px var(--font);
+  --t-sub: 400 11px/15px var(--font);
+  --t-footnote: 400 10px/13px var(--font);
+  --t-caption: 400 10px/13px var(--font);
+}
+[data-density="compact"] {
+  --t-title: 700 28px/34px var(--font);
+  --t-headline: 600 17px/22px var(--font);
+  --t-body: 400 17px/22px var(--font);
+  --t-sub: 400 15px/20px var(--font);
+  --t-footnote: 400 13px/18px var(--font);
+  --t-caption: 400 12px/16px var(--font);
+}

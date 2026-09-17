@@ -39,3 +39,11 @@ Seeded: tokens, contract, decision records DR-0001..0003.
 - Root cause hypothesis: unitless sizing tokens in density-scoped blocks
   override :root via inheritance (compact pages only).
 - Fix: px values asserted across :root AND both density scopes.
+
+## v0.1.3d — VAL-0007c root causes found
+- Stacked alert buttons: flex:1 basis 0% overrode height on column axis -> 19px.
+  Fix: flex 1 1 auto + explicit height.
+- Type tokens: if declared without a font family, font: shorthand is invalid
+  and silently dropped. Composite shorthands (wgt size/lh family) reasserted.
+- Lesson for codegen checklist: shorthands need complete values; flex-basis
+  beats height on the main axis.

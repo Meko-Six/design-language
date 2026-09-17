@@ -58,3 +58,6 @@
 .alert { max-width: 270px; }                 /* kit proportion 270/402, provisional */
 .alert-actions--stacked { gap: var(--space-2); }
 .alert-actions--stacked .btn { border-radius: calc(var(--touch-target) / 2); }
+
+/* v0.1.3d — VAL-0007c: flex-basis was overriding height on stacked buttons */
+.alert-actions .btn { flex: 1 1 auto; height: var(--touch-target); }
