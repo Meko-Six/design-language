@@ -160,3 +160,10 @@
 :root {
   --stat: 700 40px/1 var(--font);
 }
+
+/* v0.1.7b — VAL-0007d: --font root definition (composite type tokens
+   reference var(--font); without it every font: shorthand is invalid
+   and typography system-wide falls back to defaults) */
+:root {
+  --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+}
