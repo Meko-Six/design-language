@@ -5,6 +5,7 @@ meta:
   accent: { value: "#0B84FE", provenance: owner-decision, ref: DR-0001 }
   chrome: in-page-only, no window controls (ref DR-0003)
 color:
+    scrim: "rgba(0,0,0,0.55)"   # VAL-0003+VAL-0004 promoted; medium confidence
   surfaces:
     base: "#000000"
     raised: "#1C1C1E"
