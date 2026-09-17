@@ -18,3 +18,7 @@ cancel: fill-subtle, label-primary
 
 ## Content conventions
 title/message: sentence case, short · button labels: Title Case
+
+## Amendment 1 (v0.1.3a, VAL-0006)
+stacked action gap = space-2 (8), not space-3. max-width 270px (kit proportion),
+provisional until regular-mode pass.

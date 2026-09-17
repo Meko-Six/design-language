@@ -24,3 +24,7 @@ Seeded: tokens, contract, decision records DR-0001..0003.
 - PROVISIONAL: sheet side margins = space-2, grabber geometry (G12),
   alert width = screen-margin-derived
 - Enter/exit animation deliberately absent — governed by motion layer (OPEN)
+
+## v0.1.3a — VAL-0006 pattern findings (user-reported, confirmed vs kit)
+- alert: max-width 270px added; stacked gap space-3 -> space-2
+- button: pill scope extended to alert stacked actions (G11 amendment)

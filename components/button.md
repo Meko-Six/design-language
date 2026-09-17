@@ -28,3 +28,7 @@ red fill for destructive (label color only)
 
 ## Open questions
 pressed-state tint unverified (motion layer OPEN)
+
+## Amendment 1 (v0.1.3a, VAL-0006)
+pill variant ALSO applies to alert stacked actions (kit Alert.png right layout;
+VAL-0002 sighting). Previous "sheet/action contexts only" was wrong.

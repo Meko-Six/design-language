@@ -53,3 +53,8 @@
 .sheet-header .btn--icon { justify-self: start; }
 .sheet-header .btn--icon.is-confirm { justify-self: end; background: var(--accent); color: var(--label-primary); }
 .sheet-content { padding: var(--space-2) 0 var(--space-5); overflow-y: auto; }
+
+/* v0.1.3a — VAL-0006 findings */
+.alert { max-width: 270px; }                 /* kit proportion 270/402, provisional */
+.alert-actions--stacked { gap: var(--space-2); }
+.alert-actions--stacked .btn { border-radius: calc(var(--touch-target) / 2); }
