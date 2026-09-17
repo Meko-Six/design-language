@@ -1,0 +1,50 @@
+---
+meta:
+  version: 0.1.0
+  appearance: dark-only
+  accent: { value: "#0B84FE", provenance: owner-decision, ref: DR-0001 }
+  chrome: in-page-only, no window controls (ref DR-0003)
+color:
+  surfaces:
+    base: "#000000"
+    raised: "#1C1C1E"
+    overlay: "#2C2C2E"
+  labels:
+    primary: "#FFFFFF"
+    secondary: "rgba(235,235,245,0.60)"
+    tertiary: "rgba(235,235,245,0.30)"
+  separator: "rgba(84,84,88,0.60)"
+  fills:
+    subtle: "rgba(118,118,128,0.24)"
+    prominent: "rgba(118,118,128,0.32)"
+  system:
+    blue: "#0A84FF"; red: "#FF453A"; green: "#32D74B"
+    orange: "#FF9F0A"; purple: "#BF5AF2"; teal: "#40C8E0"
+type:
+  compact:
+    large-title: { size: 34, weight: 700 }
+    title: { size: 28, weight: 700 }
+    headline: { size: 17, weight: 600 }
+    body: { size: 17, weight: 400 }
+    subheadline: { size: 15, weight: 400 }
+    footnote: { size: 13, weight: 400 }
+    caption: { size: 12, weight: 400 }
+  regular:
+    title: { size: 22, weight: 700 }
+    headline: { size: 13, weight: 600 }
+    body: { size: 13, weight: 400 }
+    subheadline: { size: 11, weight: 400 }
+    footnote: { size: 10, weight: 400 }
+    caption: { size: 10, weight: 400 }
+spacing:
+  scale: [4, 8, 12, 16, 24, 32, 48]
+  screen-margin: { compact: 16, regular: 20 }
+radius: { control: 8, card: 12, container: 16 }
+sizing:
+  touch-target: 44
+  row-height: 44
+  topbar: { compact: 44, regular: 52 }
+  tabbar: { compact: 49 }
+motion:
+  fast: { duration: 150, status: open }
+  base: { duration: 250, status: open }

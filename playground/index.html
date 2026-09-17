@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Token Inspector</title>
+  <link rel="stylesheet" href="./src/styles.css" />
+</head>
+<body data-density="regular">
+  <h1>Token Inspector</h1>
+  <p class="subtitle">design-language / tokens.yaml — v0.1.0</p>
+
+  <div class="density-toggle">
+    <button id="btn-regular" class="active" onclick="setDensity('regular')">regular</button>
+    <button id="btn-compact" onclick="setDensity('compact')">compact</button>
+  </div>
+
+  <h2>Surfaces</h2>
+  <div class="row">
+    <div class="swatch swatch--base">base</div>
+    <div class="swatch swatch--raised">raised</div>
+    <div class="swatch swatch--overlay">overlay</div>
+  </div>
+
+  <h2>Labels</h2>
+  <div class="label-sample label-sample--primary">Primary label</div>
+  <div class="label-sample label-sample--secondary">Secondary label</div>
+  <div class="label-sample label-sample--tertiary">Tertiary label</div>
+
+  <h2>Type Scale</h2>
+  <div class="type-row">
+    <span class="type-label">title</span>
+    <span class="type-sample--title">The quick brown fox</span>
+  </div>
+  <div class="type-row">
+    <span class="type-label">headline</span>
+    <span class="type-sample--headline">The quick brown fox</span>
+  </div>
+  <div class="type-row">
+    <span class="type-label">body</span>
+    <span class="type-sample--body">The quick brown fox</span>
+  </div>
+  <div class="type-row">
+    <span class="type-label">subheadline</span>
+    <span class="type-sample--subheadline">The quick brown fox</span>
+  </div>
+  <div class="type-row">
+    <span class="type-label">caption</span>
+    <span class="type-sample--caption">The quick brown fox</span>
+  </div>
+
+  <h2>Spacing</h2>
+  <div class="spacing-bars">
+    <div class="spacing-bar-row">
+      <span class="bar-label">space-1</span>
+      <div class="bar" style="width: var(--space-1)"></div>
+    </div>
+    <div class="spacing-bar-row">
+      <span class="bar-label">space-2</span>
+      <div class="bar" style="width: var(--space-2)"></div>
+    </div>
+    <div class="spacing-bar-row">
+      <span class="bar-label">space-3</span>
+      <div class="bar" style="width: var(--space-3)"></div>
+    </div>
+    <div class="spacing-bar-row">
+      <span class="bar-label">space-4</span>
+      <div class="bar" style="width: var(--space-4)"></div>
+    </div>
+    <div class="spacing-bar-row">
+      <span class="bar-label">space-5</span>
+      <div class="bar" style="width: var(--space-5)"></div>
+    </div>
+    <div class="spacing-bar-row">
+      <span class="bar-label">space-6</span>
+      <div class="bar" style="width: var(--space-6)"></div>
+    </div>
+    <div class="spacing-bar-row">
+      <span class="bar-label">space-7</span>
+      <div class="bar" style="width: var(--space-7)"></div>
+    </div>
+  </div>
+
+  <h2>Radius</h2>
+  <div class="row">
+    <div class="radius-box radius-box--control">control</div>
+    <div class="radius-box radius-box--card">card</div>
+    <div class="radius-box radius-box--container">container</div>
+  </div>
+
+  <h2>Fills</h2>
+  <div class="row">
+    <div class="fill-box fill-box--subtle">subtle</div>
+    <div class="fill-box fill-box--prominent">prominent</div>
+  </div>
+
+  <h2>Separator</h2>
+  <div class="separator-demo"></div>
+
+  <h2>Accent</h2>
+  <div class="chip">
+    <span class="chip-swatch"></span>
+    <span class="chip-text">#0B84FE</span>
+  </div>
+
+  <script>
+    function setDensity(density) {
+      document.body.setAttribute('data-density', density);
+      document.getElementById('btn-regular').classList.toggle('active', density === 'regular');
+      document.getElementById('btn-compact').classList.toggle('active', density === 'compact');
+    }
+  </script>
+</body>
+</html>

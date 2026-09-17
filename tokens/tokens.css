@@ -1,0 +1,94 @@
+/* AUTO-DERIVED from tokens.yaml — edit the YAML, never this file */
+
+:root {
+  /* meta */
+  --accent: #0B84FE;
+
+  /* color / surfaces */
+  --surface-base: #000000;
+  --surface-raised: #1C1C1E;
+  --surface-overlay: #2C2C2E;
+
+  /* color / labels */
+  --label-primary: #FFFFFF;
+  --label-secondary: rgba(235,235,245,0.60);
+  --label-tertiary: rgba(235,235,245,0.30);
+
+  /* color / separator */
+  --separator: rgba(84,84,88,0.60);
+
+  /* color / fills */
+  --fill-subtle: rgba(118,118,128,0.24);
+  --fill-prominent: rgba(118,118,128,0.32);
+
+  /* color / system */
+  --system-blue: #0A84FF;
+  --system-red: #FF453A;
+  --system-green: #32D74B;
+  --system-orange: #FF9F0A;
+  --system-purple: #BF5AF2;
+  --system-teal: #40C8E0;
+
+  /* type / regular (default density) */
+  --t-large-title-size: 34px;
+  --t-large-title-weight: 700;
+  --t-title-size: 22px;
+  --t-title-weight: 700;
+  --t-headline-size: 13px;
+  --t-headline-weight: 600;
+  --t-body-size: 13px;
+  --t-body-weight: 400;
+  --t-subheadline-size: 11px;
+  --t-subheadline-weight: 400;
+  --t-footnote-size: 10px;
+  --t-footnote-weight: 400;
+  --t-caption-size: 10px;
+  --t-caption-weight: 400;
+
+  /* spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --screen-margin: 20px;
+
+  /* radius */
+  --radius-control: 8px;
+  --radius-card: 12px;
+  --radius-container: 16px;
+
+  /* sizing */
+  --touch-target: 44px;
+  --row-height: 44px;
+  --topbar-height: 52px;
+  --tabbar-height: 49px;
+
+  /* motion */
+  --motion-fast: 150ms;
+  --motion-base: 250ms;
+}
+
+[data-density="compact"] {
+  /* type / compact */
+  --t-large-title-size: 34px;
+  --t-large-title-weight: 700;
+  --t-title-size: 28px;
+  --t-title-weight: 700;
+  --t-headline-size: 17px;
+  --t-headline-weight: 600;
+  --t-body-size: 17px;
+  --t-body-weight: 400;
+  --t-subheadline-size: 15px;
+  --t-subheadline-weight: 400;
+  --t-footnote-size: 13px;
+  --t-footnote-weight: 400;
+  --t-caption-size: 12px;
+  --t-caption-weight: 400;
+
+  /* sizing */
+  --screen-margin: 16px;
+  --topbar-height: 44px;
+}
