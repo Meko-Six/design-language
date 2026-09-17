@@ -54,3 +54,8 @@ Seeded: tokens, contract, decision records DR-0001..0003.
 - active tab = inset segment, darker fill, accent content; inactive = label-primary
 - iPad frame in Tab Bars.png: out of device scope, skipped
 - tab-bar component spec now writable
+
+## v0.1.5 — VAL-0009 top chrome era amendment
+- compact chrome: floating items (chrome-item 44), no bar container
+- chrome-group: actions pill container (provisional geometry)
+- topbar-h now regular-only; large-title placement convention recorded

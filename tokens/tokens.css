@@ -148,3 +148,9 @@
   --tabbar-inset: 8px;   /* horizontal margin from screen edge */
   --tabbar-offset: 10px; /* gap above home indicator */
 }
+
+/* v0.1.5 — VAL-0009: compact top chrome = floating items, no bar container */
+:root {
+  --chrome-item: 44px;   /* was topbar-h compact; item size, not bar height */
+  --topbar-h: 52px;      /* now regular-mode only (pending macOS validation) */
+}
