@@ -141,3 +141,10 @@
   --t-footnote: 400 13px/18px var(--font);
   --t-caption: 400 12px/16px var(--font);
 }
+
+/* v0.1.4 — VAL-0008: tab bar amended to floating-pill model (iOS 26/27 era) */
+:root {
+  --tabbar-h: 50px;      /* pill height; legacy 49 within tolerance */
+  --tabbar-inset: 8px;   /* horizontal margin from screen edge */
+  --tabbar-offset: 10px; /* gap above home indicator */
+}

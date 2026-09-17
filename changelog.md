@@ -47,3 +47,10 @@ Seeded: tokens, contract, decision records DR-0001..0003.
   and silently dropped. Composite shorthands (wgt size/lh family) reasserted.
 - Lesson for codegen checklist: shorthands need complete values; flex-basis
   beats height on the main axis.
+
+## v0.1.4 — VAL-0008 tab bar era amendment
+- tab bar container model: full-width bar -> floating pill (inset 8, offset 10,
+  radius = height/2, provisional, medium confidence, bezel framing)
+- active tab = inset segment, darker fill, accent content; inactive = label-primary
+- iPad frame in Tab Bars.png: out of device scope, skipped
+- tab-bar component spec now writable
