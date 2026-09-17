@@ -26,3 +26,9 @@ estimate, provisional). H/L = footnote semibold, primary values. Hour labels =
 footnote semibold secondary. Hour temps = body semibold. No hairline above
 strip. CORRECTION: H/L format uses colons ("L:7° H:14°") — earlier v2 note
 was wrong; colon convention stands (matches VAL-0001 badges era).
+
+## Layout amendment v2 (v0.1.8, device comparison)
+Device arrangement: city top-left (semibold, + location arrow) · condition GLYPH
+top-right, no condition text · temp LEFT beneath city (stat) · H/L right-aligned
+same band, order L then H, colon format · strip full-width 3 rows, no Now label,
+no hairline · tight space-4 padding. v1's split-header arrangement was wrong.

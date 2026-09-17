@@ -71,3 +71,10 @@ Seeded: tokens, contract, decision records DR-0001..0003.
 - Widget weight convention: semibold variants of roles in widget context
 - Hairline above strip removed; colon convention for H/L restored
 - Foundation lesson: type roles need CONTEXT variants (list vs glanceable)
+
+## v0.1.8 — INST-0001 v2 layout amendment (user-caught)
+- Widget rearranged to device arrangement: temp under city (left), condition
+  glyph top-right (text dropped), H/L right L-first, no Now, full-width strip
+- VAL-0007d CLOSED: root cause of flat typography = undefined --font root
+  variable (all composite font: shorthands invalid). One root token,
+  system-wide effect — codegen checklist item.
