@@ -27,3 +27,13 @@
 .cell-hour.is-now { color: var(--accent); }
 .cell-glyph { font-size: 1.4em; }                /* G15 placeholder */
 .cell-temp  { font: var(--t-sub); color: var(--label-primary); }
+
+/* v0.1.7 — typography amendment: widget weight convention + stat */
+.widget-temp { font: var(--stat); }
+.widget-city { font: var(--t-headline); }
+.widget-meta { font: var(--t-footnote); color: var(--label-secondary); }
+.widget-meta b { font-weight: 600; color: var(--label-primary); }
+.strip { border-top: none; padding-top: 0; }
+.cell-hour { font: var(--t-footnote); font-weight: 600; color: var(--label-secondary); }
+.cell-glyph { font-size: 1.6em; }
+.cell-temp { font: var(--t-body); font-weight: 600; }

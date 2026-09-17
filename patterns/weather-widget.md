@@ -18,3 +18,11 @@ G14 stat primitive — large value + unit + label; v1 uses large-title token
   (decision: widget temp does NOT exceed system scale)
 G15 icon set — weather condition glyphs; emoji placeholders, NOT canonical
 G16 atmospheric gradient background — deferred, decoration not foundation
+
+## Typography amendment (v0.1.7, device comparison)
+List-derived roles alone are wrong for glanceable widgets. Widget context:
+semibold weight variants of existing roles; temp uses stat token (~40, device
+estimate, provisional). H/L = footnote semibold, primary values. Hour labels =
+footnote semibold secondary. Hour temps = body semibold. No hairline above
+strip. CORRECTION: H/L format uses colons ("L:7° H:14°") — earlier v2 note
+was wrong; colon convention stands (matches VAL-0001 badges era).

@@ -154,3 +154,9 @@
   --chrome-item: 44px;   /* was topbar-h compact; item size, not bar height */
   --topbar-h: 52px;      /* now regular-mode only (pending macOS validation) */
 }
+
+/* v0.1.7 — G14 promoted: stat primitive (glanceable context, device-measured
+   provisional); widget weight convention = semibold variants of existing roles */
+:root {
+  --stat: 700 40px/1 var(--font);
+}

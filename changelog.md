@@ -65,3 +65,9 @@ Seeded: tokens, contract, decision records DR-0001..0003.
 - Built exclusively from system parts; gaps raised: G14 stat (v1 = large-title
   token, decision: no type beyond system scale), G15 icons (emoji placeholder),
   G16 atmospheric gradient (deferred, decoration)
+
+## v0.1.7 — INST-0001 typography amendment (user-caught, device comparison)
+- G14 PROMOTED: stat token (700 40px) — glanceable context exceeds list scale
+- Widget weight convention: semibold variants of roles in widget context
+- Hairline above strip removed; colon convention for H/L restored
+- Foundation lesson: type roles need CONTEXT variants (list vs glanceable)
