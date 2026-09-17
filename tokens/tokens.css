@@ -1,6 +1,8 @@
 /* AUTO-DERIVED from tokens.yaml — edit the YAML, never this file */
 
 :root {
+  --scrim: rgba(0,0,0,.55);
+
   /* meta */
   --accent: #0B84FE;
 
