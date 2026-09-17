@@ -1,0 +1,55 @@
+/* ============================================================
+   PATTERNS — alert + sheet (patterns/*.md)
+   Composes .btn / .field-* / .group / .row component classes.
+   Consumes tokens.css ONLY. Provisional geometry flagged: G12.
+   ============================================================ */
+
+/* structural layering constants (stacking, not visual) */
+.overlay { position: fixed; inset: 0; z-index: 10; }
+.overlay[hidden] { display: none; }
+.scrim { position: absolute; inset: 0; background: var(--scrim); }
+
+/* ---------- ALERT (patterns/alert.md) ---------- */
+.alert {
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - var(--screen-margin) * 4);   /* narrower than screen */
+  background: var(--surface-overlay);
+  border-radius: var(--radius-container);          /* G7 ruling */
+  padding: var(--space-4);
+  display: flex; flex-direction: column; gap: var(--space-3);
+}
+.alert-title    { font: var(--t-headline); color: var(--label-primary); text-align: center; }
+.alert-message  { font: var(--t-footnote); color: var(--label-secondary); text-align: center; }
+.alert-actions  { display: flex; gap: var(--space-3); }
+.alert-actions--row     { flex-direction: row; }
+.alert-actions--stacked { flex-direction: column; }
+.alert-actions .btn     { flex: 1; width: 100%; }
+
+/* ---------- SHEET (patterns/sheet.md) ---------- */
+.sheet {
+  position: absolute;
+  left: var(--space-2); right: var(--space-2); bottom: 0;   /* side margins provisional */
+  background: var(--surface-raised);
+  border-radius: var(--radius-container) var(--radius-container) 0 0;
+  display: flex; flex-direction: column;
+  max-height: calc(100% - var(--topbar-h) * 2);
+}
+.sheet-grabber {   /* G12 PROVISIONAL — metrics unverified */
+  width: var(--space-6); height: var(--space-1);
+  border-radius: calc(var(--space-1) / 2);
+  background: var(--fill-prominent);
+  margin: var(--space-2) auto 0;
+}
+.sheet-header {
+  display: grid;
+  grid-template-columns: var(--touch-target) 1fr var(--touch-target);
+  align-items: center;
+  height: var(--topbar-h);
+  padding: 0 var(--space-2);
+}
+.sheet-title { font: var(--t-headline); color: var(--label-primary); text-align: center; }
+.sheet-header .btn--icon { justify-self: start; }
+.sheet-header .btn--icon.is-confirm { justify-self: end; background: var(--accent); color: var(--label-primary); }
+.sheet-content { padding: var(--space-2) 0 var(--space-5); overflow-y: auto; }

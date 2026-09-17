@@ -17,3 +17,10 @@ Seeded: tokens, contract, decision records DR-0001..0003.
   (platform structural constant)
 - G13 opened: toggle/stepper/badge exact metrics provisional, token-derived
 - OPEN: regular-mode control sizing (gallery currently compact metrics)
+
+## v0.1.3 — pattern demos
+- playground/patterns.html + src/patterns.css: alert (row/stacked) + sheet per
+  patterns/*.md; first real-context consumption of --scrim (G10 closed visually)
+- PROVISIONAL: sheet side margins = space-2, grabber geometry (G12),
+  alert width = screen-margin-derived
+- Enter/exit animation deliberately absent — governed by motion layer (OPEN)

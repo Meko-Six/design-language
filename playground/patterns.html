@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design Language — Patterns</title>
+<link rel="stylesheet" href="./src/styles.css">
+<link rel="stylesheet" href="./src/components.css">
+<link rel="stylesheet" href="./src/patterns.css">
+</head>
+<body data-density="compact" style="padding-bottom:var(--space-7)">
+<h1 style="font:var(--t-title);margin:var(--space-5)">Patterns</h1>
+<div style="font:var(--t-headline);margin:0 var(--space-5)">
+  <a href="./index.html" style="color:var(--accent)">tokens</a> ·
+  <a href="./components.html" style="color:var(--accent)">components</a>
+</div>
+
+<div class="group-title">Demo content (scrim target)</div>
+<div class="group">
+  <div class="row"><span class="row-title">Real content behind</span>
+    <span class="row-value">Detail <span class="row-chevron">›</span></span></div>
+  <div class="row"><span class="row-title">Second row</span>
+    <span class="row-value"><span class="badge">9:41</span></span></div>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:var(--space-3);margin:var(--space-5)">
+  <button class="btn btn--gray" onclick="show('ov-alert2')">Alert — 2 actions</button>
+  <button class="btn btn--gray" onclick="show('ov-alert3')">Alert — stacked + destructive</button>
+  <button class="btn btn--gray" onclick="show('ov-sheet')">Sheet</button>
+</div>
+
+<!-- ALERT: horizontal pair -->
+<div class="overlay" id="ov-alert2" hidden>
+  <div class="scrim" onclick="hide('ov-alert2')"></div>
+  <div class="alert">
+    <div class="alert-title">A Short Title Is Best</div>
+    <div class="alert-message">A message should be a short, complete sentence.</div>
+    <div class="alert-actions alert-actions--row">
+      <button class="btn btn--gray" onclick="hide('ov-alert2')">Cancel</button>
+      <button class="btn btn--filled" onclick="hide('ov-alert2')">Default</button>
+    </div>
+  </div>
+</div>
+
+<!-- ALERT: stacked with destructive + field -->
+<div class="overlay" id="ov-alert3" hidden>
+  <div class="scrim" onclick="hide('ov-alert3')"></div>
+  <div class="alert">
+    <div class="alert-title">A Short Title Is Best</div>
+    <div class="alert-message">A message should be a short, complete sentence.</div>
+    <div class="field-card">
+      <div class="field-row"><input class="field-input" placeholder="Value"></div>
+    </div>
+    <div class="alert-actions alert-actions--stacked">
+      <button class="btn btn--filled" onclick="hide('ov-alert3')">Default</button>
+      <button class="btn btn--destructive" onclick="hide('ov-alert3')">Destructive</button>
+      <button class="btn btn--gray" onclick="hide('ov-alert3')">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<!-- SHEET -->
+<div class="overlay" id="ov-sheet" hidden>
+  <div class="scrim" onclick="hide('ov-sheet')"></div>
+  <div class="sheet">
+    <div class="sheet-grabber"></div>
+    <div class="sheet-header">
+      <button class="btn btn--gray btn--icon" onclick="hide('ov-sheet')">✕</button>
+      <div class="sheet-title">Title</div>
+      <button class="btn btn--gray btn--icon is-confirm" onclick="hide('ov-sheet')">✓</button>
+    </div>
+    <div class="sheet-content">
+      <div class="group">
+        <div class="row"><span class="row-title">Sheet content</span>
+          <span class="row-value">uses standard rows <span class="row-chevron">›</span></span></div>
+        <div class="row"><span class="row-title">Second row</span>
+          <label class="switch"><input type="checkbox" checked>
+            <span class="knob-track"><span class="knob"></span></span></label></div>
+        <div class="row"><span class="row-title">Third row</span>
+          <span class="row-value"><span class="badge">June 2024</span></span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function show(id){ document.getElementById(id).hidden = false; }
+function hide(id){ document.getElementById(id).hidden = true; }
+</script>
+</body>
+</html>
