@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design Language — Components</title>
+<link rel="stylesheet" href="./src/styles.css">
+<link rel="stylesheet" href="./src/components.css">
+</head>
+<body data-density="regular" style="padding-bottom:var(--space-7)">
+<h1 style="font:var(--t-title);margin:var(--space-5)">Component Gallery</h1>
+<div style="font:var(--t-headline);margin:0 var(--space-5)">
+  Density:
+  <button onclick="document.body.dataset.density='regular'">regular</button>
+  <button onclick="document.body.dataset.density='compact'">compact</button>
+  <a href="./index.html" style="color:var(--accent)">← tokens</a>
+</div>
+
+<h2 style="font:var(--t-headline);margin:var(--space-5)">Buttons</h2>
+<div style="display:flex;flex-wrap:wrap;gap:var(--space-3);margin:0 var(--space-5)">
+  <button class="btn btn--filled">Default</button>
+  <button class="btn btn--tinted">Tinted</button>
+  <button class="btn btn--gray">Gray</button>
+  <button class="btn btn--plain">Plain</button>
+  <button class="btn btn--destructive">Destructive</button>
+  <button class="btn btn--filled btn--pill">Pill</button>
+  <button class="btn btn--gray btn--icon">✕</button>
+  <button class="btn btn--gray is-disabled">Disabled</button>
+</div>
+
+<h2 style="font:var(--t-headline);margin:var(--space-5)">Text Input</h2>
+<div class="field-card" style="margin:0 var(--space-5)">
+  <div class="field-row">
+    <input class="field-input" placeholder="Placeholder" value="">
+  </div>
+  <div class="field-row">
+    <input class="field-input" value="Value">
+    <span class="field-clear">ⓧ</span>
+  </div>
+</div>
+
+<h2 style="font:var(--t-headline);margin:var(--space-5)">List Rows — grouped</h2>
+<div class="group-title">General</div>
+<div class="group">
+  <div class="row"><span class="row-title">Title</span>
+    <span class="row-value">Detail <span class="row-chevron">›</span></span></div>
+  <div class="row"><span class="row-main">
+    <span class="row-title">Title</span><span class="row-sub">Subtitle</span></span>
+    <span class="row-value">Detail <span class="row-chevron">›</span></span></div>
+  <div class="row"><span class="row-title">Title</span>
+    <span class="row-accent">Button</span></div>
+  <div class="row"><span class="row-title">Title</span>
+    <span class="row-value"><span class="badge">June 2024</span>
+    <span class="badge">9:41 AM</span></span></div>
+  <div class="row"><span class="row-title">Title</span>
+    <span class="row-value">Pop-up ⌄</span></div>
+  <div class="row"><span class="thumb"></span>
+    <span class="row-main"><span class="row-title">Title</span>
+    <span class="row-sub">Subtitle</span></span>
+    <span class="row-chevron">›</span></div>
+  <div class="row"><span class="row-title">Title</span>
+    <span class="row-value">
+      <span class="stepper"><button>−</button><button>+</button></span>
+    </span></div>
+  <div class="row"><span class="row-title">Title</span>
+    <label class="switch"><input type="checkbox" checked>
+      <span class="knob-track"><span class="knob"></span></span></label></div>
+</div>

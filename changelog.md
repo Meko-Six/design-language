@@ -8,3 +8,12 @@ Seeded: tokens, contract, decision records DR-0001..0003.
 - ADDED color.scrim rgba(0,0,0,0.55) — promoted from VAL-0003/VAL-0004 (medium confidence)
 - CLOSED G7 (modal radius = container 16); OPENED G12 (sheet grabber)
 - PROMOTED to spec-ready: text-input (G8), button variants (G9)
+
+## v0.1.2 — component gallery
+- playground/components.html + src/components.css: reference implementations
+  of button, text-input, list-row per components/*.md specs
+- PROVISIONAL tokens in tokens.css: --accent-tinted rgba(11,132,254,0.15)
+  (VAL-0001, single sighting — YAML sync pending), --hairline 1px
+  (platform structural constant)
+- G13 opened: toggle/stepper/badge exact metrics provisional, token-derived
+- OPEN: regular-mode control sizing (gallery currently compact metrics)
