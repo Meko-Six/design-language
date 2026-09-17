@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design Language — Weather Widget (INST-0001)</title>
+<link rel="stylesheet" href="./src/styles.css">
+<link rel="stylesheet" href="./src/components.css">
+<link rel="stylesheet" href="./src/instances.css">
+</head>
+<body data-density="compact" style="padding:var(--space-5)">
+<h1 style="font:var(--t-title);margin-bottom:var(--space-4)">Weather Widget — INST-0001</h1>
+
+<div class="widget">
+  <div class="widget-header">
+    <div>
+      <div class="widget-city">Home</div>
+      <div class="widget-cond">Partly Cloudy</div>
+    </div>
+    <div class="widget-temp">17°</div>
+  </div>
+  <div class="widget-meta">
+    <span>H:<b>19°</b></span><span>L:<b>11°</b></span>
+  </div>
+  <div class="strip">
+    <div class="cell"><span class="cell-hour is-now">Now</span>
+      <span class="cell-glyph">⛅️</span><span class="cell-temp">17°</span></div>
+    <div class="cell"><span class="cell-hour">18</span>
+      <span class="cell-glyph">☀️</span><span class="cell-temp">18°</span></div>
+    <div class="cell"><span class="cell-hour">19</span>
+      <span class="cell-glyph">☀️</span><span class="cell-temp">16°</span></div>
+    <div class="cell"><span class="cell-hour">20</span>
+      <span class="cell-glyph">🌙</span><span class="cell-temp">14°</span></div>
+    <div class="cell"><span class="cell-hour">21</span>
+      <span class="cell-glyph">🌧</span><span class="cell-temp">13°</span></div>
+    <div class="cell"><span class="cell-hour">22</span>
+      <span class="cell-glyph">🌧</span><span class="cell-temp">12°</span></div>
+  </div>
+</div>
+
+<p style="font:var(--t-footnote);color:var(--label-tertiary);max-width:360px">
+G15: glyphs are emoji placeholders — icon layer deferred.</p>
+</body>
+</html>

@@ -1,0 +1,29 @@
+/* ============================================================
+   INSTANCE: weather widget v1 (patterns/weather-widget.md)
+   System parts only. Placeholders flagged: emoji = G15.
+   ============================================================ */
+.widget {
+  background: var(--surface-raised);
+  border-radius: var(--radius-card);
+  padding: var(--space-4);
+  display: flex; flex-direction: column; gap: var(--space-3);
+  max-width: 360px;
+}
+.widget-header { display: flex; align-items: flex-start;
+                 justify-content: space-between; gap: var(--space-4); }
+.widget-city   { font: var(--t-body); color: var(--label-primary); }
+.widget-cond   { font: var(--t-sub);  color: var(--label-secondary); }
+.widget-temp   { font: var(--t-title); color: var(--label-primary);
+                 margin-left: auto; line-height: 1; }
+.widget-meta   { display: flex; gap: var(--space-3);
+                 font: var(--t-caption); color: var(--label-tertiary); }
+.widget-meta b { font-weight: 400; color: var(--label-primary); }
+.strip { display: flex; gap: var(--space-4); overflow-x: auto;
+         padding-top: var(--space-2);
+         border-top: var(--hairline) solid var(--separator); }
+.cell  { display: flex; flex-direction: column; align-items: center;
+         gap: var(--space-2); min-width: var(--space-6); }
+.cell-hour  { font: var(--t-caption); color: var(--label-tertiary); }
+.cell-hour.is-now { color: var(--accent); }
+.cell-glyph { font-size: 1.4em; }                /* G15 placeholder */
+.cell-temp  { font: var(--t-sub); color: var(--label-primary); }

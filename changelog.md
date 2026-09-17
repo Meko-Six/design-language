@@ -59,3 +59,9 @@ Seeded: tokens, contract, decision records DR-0001..0003.
 - compact chrome: floating items (chrome-item 44), no bar container
 - chrome-group: actions pill container (provisional geometry)
 - topbar-h now regular-only; large-title placement convention recorded
+
+## v0.1.6 — INST-0001 weather widget (first instance)
+- patterns/weather-widget.md + playground/weather.html + src/instances.css
+- Built exclusively from system parts; gaps raised: G14 stat (v1 = large-title
+  token, decision: no type beyond system scale), G15 icons (emoji placeholder),
+  G16 atmospheric gradient (deferred, decoration)
