@@ -28,3 +28,9 @@ Seeded: tokens, contract, decision records DR-0001..0003.
 ## v0.1.3a — VAL-0006 pattern findings (user-reported, confirmed vs kit)
 - alert: max-width 270px added; stacked gap space-3 -> space-2
 - button: pill scope extended to alert stacked actions (G11 amendment)
+
+## v0.1.3b — VAL-0007 (user-reported)
+- Sizing tokens reasserted with px units; alert stacked buttons had collapsed
+  to content height (invalid/missing --touch-target). If tokens.yaml→css
+  codegen skipped sizing before, this class can recur — codegen gets a
+  checklist when it's built.

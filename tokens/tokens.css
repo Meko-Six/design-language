@@ -102,3 +102,11 @@
   --sys-red: #FF453A;
   --sys-green: #32D74B;
 }
+
+/* v0.1.3b — VAL-0007: sizing tokens reasserted (height collapse fix) */
+:root {
+  --touch-target: 44px;
+  --row-height: 44px;
+  --topbar-h: 52px;
+}
+[data-density="compact"] { --topbar-h: 44px; }
