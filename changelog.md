@@ -83,8 +83,3 @@ Seeded: tokens, contract, decision records DR-0001..0003.
 - AMENDED stat token weight 700→400 (device reads regular; flip to 500 pending owner)
 - AMENDED widget side padding 16→18 via --widget-pad-x (owner override); G17 opened: 18 off spacing scale, needs 2nd sighting or owner promotion
 - patterns/weather-widget.md + instances.css + tokens.css updated; tokens.yaml sync still pending (accent-tinted, stat, font, pill chrome, widget-pad-x)
-## v0.1.9 — VAL-0010 weather v2 stamp (owner device check)
-- INST-0001 v2 STAMPED: 5 SNAP / 2 AMEND / 0 GAP
-- AMENDED stat token weight 700→400 (device reads regular; flip to 500 pending owner)
-- AMENDED widget side padding 16→18 via --widget-pad-x (owner override); G17 opened: 18 off spacing scale, needs 2nd sighting or owner promotion
-- patterns/weather-widget.md + instances.css + tokens.css updated; tokens.yaml sync still pending (accent-tinted, stat, font, pill chrome, widget-pad-x)
