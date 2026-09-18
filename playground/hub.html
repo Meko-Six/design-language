@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design Language — Hub Shell (provisional)</title>
+<link rel="stylesheet" href="./src/styles.css">
+<link rel="stylesheet" href="./src/instances.css">
+<style>
+body[data-density="compact"] { padding: 0 var(--grid-margin)
+  calc(var(--tabbar-h) + var(--tabbar-offset) + var(--space-5)); }
+.hub-title { font: var(--t-large-title); margin: var(--space-5) 0 var(--space-4); }
+.grid { display: grid; grid-template-columns: repeat(2, var(--widget-sm-w));
+  gap: var(--grid-gutter); }
+.slot { background: var(--surface-raised); border-radius: var(--radius-card);
+  display: flex; align-items: center; justify-content: center;
+  font: var(--t-footnote); color: var(--label-tertiary); }
+.slot--sm { width: var(--widget-sm-w); height: var(--widget-sm-h); }
+.slot--md { grid-column: span 2; width: var(--widget-md-w);
+  height: var(--widget-md-h); }
+.slot--lg { grid-column: span 2; width: var(--widget-lg-w);
+  height: var(--widget-lg-h); }
+.tabbar { position: fixed; left: var(--tabbar-inset);
+  right: var(--tabbar-inset);
+  bottom: calc(var(--tabbar-offset) + env(safe-area-inset-bottom, 0px));
+  height: var(--tabbar-h); border-radius: calc(var(--tabbar-h) / 2);
+  background: var(--fill-prominent); display: flex; }
+.tab { flex: 1; display: flex; flex-direction: column; align-items: center;
+  justify-content: center; gap: 2px; border-radius: calc(var(--tabbar-h) / 2);
+  font: var(--t-caption); color: var(--label-primary); }
+.tab.active { background: var(--surface-overlay); color: var(--accent); }
+.tab .glyph { font-size: 1.4em; line-height: 1; }
+</style>
+</head>
+<body data-density="compact">
+<h1 class="hub-title">Hub</h1>
+<div class="grid">
+  <div class="slot slot--md">medium 364×170 — weather slot (INST-0002)</div>
+  <div class="slot slot--sm">small</div>
+  <div class="slot slot--sm">small</div>
+  <div class="slot slot--lg">large 364×382</div>
+</div>
+<nav class="tabbar">
+  <div class="tab active"><span class="glyph">🏠</span>Home</div>
+  <div class="tab"><span class="glyph">📅</span>Calendar</div>
+  <div class="tab"><span class="glyph">📰</span>Feeds</div>
+  <div class="tab"><span class="glyph">⚙️</span>Settings</div>
+</nav>
+<p style="font:var(--t-footnote);color:var(--label-tertiary);
+  margin:var(--space-4) 0 var(--space-5)">G18: grid provisional —
+  G15: emoji placeholders</p>
+</body>
+</html>
