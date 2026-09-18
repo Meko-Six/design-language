@@ -32,3 +32,7 @@ Device arrangement: city top-left (semibold, + location arrow) · condition GLYP
 top-right, no condition text · temp LEFT beneath city (stat) · H/L right-aligned
 same band, order L then H, colon format · strip full-width 3 rows, no Now label,
 no hairline · tight space-4 padding. v1's split-header arrangement was wrong.
+## Stamp amendment (v0.1.9, VAL-0010 device check)
+Stat token weight corrected 700→400 (G14 promotion carried wrong weight;
+device reads regular). Side padding 16→18px via --widget-pad-x (owner
+override; off-scale → G17, needs 2nd sighting or owner promotion).
