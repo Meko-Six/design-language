@@ -83,3 +83,11 @@ Seeded: tokens, contract, decision records DR-0001..0003.
 - AMENDED stat token weight 700→400 (device reads regular; flip to 500 pending owner)
 - AMENDED widget side padding 16→18 via --widget-pad-x (owner override); G17 opened: 18 off spacing scale, needs 2nd sighting or owner promotion
 - patterns/weather-widget.md + instances.css + tokens.css updated; tokens.yaml sync still pending (accent-tinted, stat, font, pill chrome, widget-pad-x)
+## v0.1.10 — hub shell (provisional, pending VAL-0011)
+- patterns/hub-shell.md + patterns/tab-bar.md + playground/hub.html
+- grid tokens: widget size classes 170/364x170/364x382 (HIG 430pt table);
+  placement margin 33, gutter 24 — home-screen idiom, owner approved direction
+- G18 opened: grid geometry provisional, needs device sighting
+- G19 opened: regular-mode hub navigation model (macOS evidence pending)
+- tab bar documented per VAL-0008 (floating pill, inset segment + accent)
+- Next: VAL-0011 owner device check (browser hub.html vs iPhone home screen)
