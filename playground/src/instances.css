@@ -1,29 +1,29 @@
 /* ============================================================
-   INSTANCE: weather widget v2 — layout amended to device
-   arrangement (INST-0001 v0.1.8). Token-only, self-contained.
-   ============================================================ */
+INSTANCE: weather widget v2 — stamped v0.1.9 (VAL-0010).
+Token-only, self-contained.
+============================================================ */
 .widget {
-  background: var(--surface-raised);
-  border-radius: var(--radius-card);
-  padding: var(--space-4);
-  max-width: 360px;
-  display: flex; flex-direction: column; gap: var(--space-3);
+background: var(--surface-raised);
+border-radius: var(--radius-card);
+padding: var(--space-4) var(--widget-pad-x);
+max-width: 360px;
+display: flex; flex-direction: column; gap: var(--space-3);
 }
-.wg-top   { display: flex; align-items: flex-start;
-            justify-content: space-between; }
-.wg-city  { font: var(--t-headline); color: var(--label-primary); }
-.wg-cond  { font-size: 1.6em; line-height: 1; }   /* G15 placeholder */
-.wg-band  { display: flex; align-items: flex-end;
-            justify-content: space-between; }
-.wg-temp  { font: var(--stat); color: var(--label-primary); line-height: .9; }
-.wg-hl    { display: flex; gap: var(--space-3);
-            font: var(--t-footnote); font-weight: 600;
-            color: var(--label-secondary); }
-.strip    { display: flex; justify-content: space-between; }
-.cell     { display: flex; flex-direction: column;
-            align-items: center; gap: var(--space-2); }
-.cell-hour  { font: var(--t-footnote); font-weight: 600;
-              color: var(--label-secondary); }
+.wg-top { display: flex; align-items: flex-start;
+justify-content: space-between; }
+.wg-city { font: var(--t-headline); color: var(--label-primary); }
+.wg-cond { font-size: 1.6em; line-height: 1; } /* G15 placeholder */
+.wg-band { display: flex; align-items: flex-end;
+justify-content: space-between; }
+.wg-temp { font: var(--stat); color: var(--label-primary); line-height: .9; }
+.wg-hl { display: flex; gap: var(--space-3);
+font: var(--t-footnote); font-weight: 600;
+color: var(--label-secondary); }
+.strip { display: flex; justify-content: space-between; }
+.cell { display: flex; flex-direction: column;
+align-items: center; gap: var(--space-2); }
+.cell-hour { font: var(--t-footnote); font-weight: 600;
+color: var(--label-secondary); }
 .cell-glyph { font-size: 1.6em; line-height: 1; } /* G15 placeholder */
-.cell-temp  { font: var(--t-body); font-weight: 600;
-              color: var(--label-primary); }
+.cell-temp { font: var(--t-body); font-weight: 600;
+color: var(--label-primary); }
