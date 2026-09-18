@@ -167,3 +167,11 @@
 :root {
   --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
 }
+/* v0.1.9 — VAL-0010 stamp amendments (owner device check)
+   stat weight 700→400: device reads regular, not bold ("normal or medium"
+   per owner; flip to 500 = one value if too thin)
+   widget side padding 16→18: owner override, OFF spacing scale — G17 */
+:root {
+--stat: 400 40px/1 var(--font);
+--widget-pad-x: 18px; /* provisional, provenance VAL-0010, G17 open */
+}
