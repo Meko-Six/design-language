@@ -175,3 +175,15 @@
 --stat: 400 40px/1 var(--font);
 --widget-pad-x: 18px; /* provisional, provenance VAL-0010, G17 open */
 }
+/* v0.1.10 — hub shell grid tokens (provisional, G18 pending VAL-0011)
+   Derived from HIG widget dims at 430pt compact canvas: small 170,
+   medium 364, large 364x382; side margin 33 = (430-364)/2, gutter 24. */
+:root {
+--widget-sm-w: 170px;  --widget-sm-h: 170px;
+--widget-md-w: 364px;  --widget-md-h: 170px;
+--widget-lg-w: 364px;  --widget-lg-h: 382px;
+}
+[data-density="compact"] {
+--grid-margin: 33px;   /* placement margin, compact canvas only */
+--grid-gutter: 24px;
+}
